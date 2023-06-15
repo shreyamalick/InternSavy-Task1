@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App By Shreya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter your location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchbtn"></button>
+            </div>
+        </div>
+        <div class="locationnotfound">
+            <h1>Sorry, Location not found</h1>
+            <img src="error.png" alt="error">
+        </div>
+
+        <div class="weatherbody">
+            <img src="cloud.png" class="weatherimg">
+            <div class="weathertext">
+                <p class="tempa"> 0°C</p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="details">
+                <div class="humidity">
+                    <iconify-icon icon="wi:humidity" style="font-size: 60px;"></iconify-icon>
+                    <div class="text">
+                        <span id="hum">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind" style="font-size: 50px; margin-right: 10px;"></i>
+                    <div class="text">
+                        <span id="windspeed">12Km/H</span>
+                        <p>Wind</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        window.alert("Welcome To My Weather App! Have a Nice Day.")
+    </script>
+    <script src="code.js"></script>
+</body>
+</html>
